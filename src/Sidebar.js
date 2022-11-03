@@ -1,17 +1,25 @@
+import { useState } from "react";
 import Logo from "./assets/logo.png";
 import "./Sidebar.css";
 import "boxicons";
 
 const Sidebar = () => {
+  const [isShrinked, setIsShrinked] = useState(false);
+
   return (
-    <nav>
+    <nav className={isShrinked ? "shrinked" : ""}>
       <div className="sidebar-top">
-        <span className="shrink-btn">
+        <span
+          className="shrink-btn"
+          onClick={() => {
+            setIsShrinked(!isShrinked);
+          }}
+        >
           <box-icon name="chevron-left"></box-icon>
         </span>
 
         <img className="logo" src={Logo} alt=""></img>
-        <h3>Aqumex</h3>
+        <h3 className="title">Aqumex</h3>
       </div>
     </nav>
   );
