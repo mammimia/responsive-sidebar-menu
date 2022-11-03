@@ -10,7 +10,7 @@ const Sidebar = ({ logo, title }) => {
   return (
     <nav className={isShrinked ? "shrinked" : ""}>
       <SidebarTop isShrinked={isShrinked} setIsShrinked={setIsShrinked} logo={logo} title={title} />
-      <Search />
+      <Search isShrinked={isShrinked} setIsShrinked={setIsShrinked} />
     </nav>
   );
 };

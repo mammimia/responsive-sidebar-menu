@@ -13,7 +13,7 @@ const SidebarTop = ({ isShrinked, setIsShrinked, logo, title }) => {
       </span>
 
       <img className="logo" src={logo} alt=""></img>
-      <h3 className="title">{title}</h3>
+      <h3 className="hide-on-shrink">{title}</h3>
     </div>
   );
 };

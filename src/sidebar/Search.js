@@ -1,10 +1,17 @@
 import React from "react";
 
-const Search = () => {
+const Search = ({ isShrinked, setIsShrinked }) => {
   return (
-    <div className="search">
+    <div
+      className="search"
+      onClick={() => {
+        if (isShrinked) {
+          setIsShrinked(false);
+        }
+      }}
+    >
       <box-icon name="search"></box-icon>
-      <input type="text" placeholder="Quick Search...search" />
+      <input className="hide-on-shrink" type="text" placeholder="Quick Search..." />
     </div>
   );
 };

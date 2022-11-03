@@ -40,7 +40,7 @@ nav.shrinked {
   font-size: 1.15rem;
 }
 
-.title {
+.hide-on-shrink {
   transition: opacity 0.3s 0.2s;
 }
 
@@ -79,8 +79,34 @@ nav.shrinked .shrink-btn * {
   transform: rotate(-180deg);
 }
 
-nav.shrinked .title {
+nav.shrinked .hide-on-shrink {
   opacity: 0;
   pointer-events: none;
   transition-delay: 0s;
+}
+
+.search {
+  min-height: 2.7rem;
+  background: var(--main-color-light);
+  margin: 2rem 0.5rem 1.7rem;
+  display: grid;
+  grid-template-columns: 2.7rem 1fr;
+  align-items: center;
+  justify-items: center;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.search input {
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  color: #fff;
+  caret-color: #fff;
+  font-family: inherit;
+}
+
+.search input::placeholder {
+  color: var(--text-color);
 }
