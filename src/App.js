@@ -1,4 +1,3 @@
-import "./App.css";
 import Content from "./Content";
 import Sidebar from "./Sidebar";
 
