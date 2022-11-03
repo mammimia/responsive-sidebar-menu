@@ -1,8 +1,14 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Content from "./Content";
+import Sidebar from "./Sidebar";
 
 function App() {
-  return <div>Sidebar Menu</div>;
+  return (
+    <>
+      <Sidebar />
+      <Content />
+    </>
+  );
 }
 
 export default App;
