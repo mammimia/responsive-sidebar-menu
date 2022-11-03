@@ -50,3 +50,7 @@ main .copyright span {
   font-weight: 500;
   cursor: pointer;
 }
+
+box-icon {
+  fill: #fff;
+}

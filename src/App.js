@@ -1,10 +1,11 @@
 import Content from "./Content";
-import Sidebar from "./Sidebar";
+import Sidebar from "./sidebar/Sidebar";
+import Logo from "./assets/logo.png";
 
 function App() {
   return (
     <>
-      <Sidebar />
+      <Sidebar logo={Logo} title={"Aqumex"} />
       <Content />
     </>
   );
