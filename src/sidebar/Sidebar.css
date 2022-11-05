@@ -110,3 +110,66 @@ nav.shrinked .hide-on-shrink {
 .search input::placeholder {
   color: var(--text-color);
 }
+
+.sidebar-links a {
+  text-decoration: none;
+}
+
+.sidebar-links ul {
+  list-style: none;
+}
+
+.sidebar-links li {
+  padding: 2.5px 0;
+}
+
+.sidebar-links a {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  height: 3.5rem;
+}
+
+.sidebar-links .sidebar-link-icon {
+  font-size: 1.3rem;
+  text-align: center;
+  min-width: 3.7rem;
+  display: grid;
+  grid-template-columns: 1rf;
+  grid-template-rows: 1rf;
+}
+
+.sidebar-links .sidebar-link-icon i {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  transition: 0.3s;
+}
+
+.sidebar-links .sidebar-link-icon i:last-child {
+  opacity: 0;
+  color: #fff;
+}
+
+.sidebar-links a.active,
+.sidebar-links a:hover {
+  color: #fff;
+}
+
+.sidebar-links a .sidebar-link-text {
+  transition: color 0.3s;
+}
+
+.sidebar-links a.active i:first-child {
+  opacity: 0;
+}
+.sidebar-links a.active i:last-child {
+  opacity: 1;
+}
+
+.sidebar-links .active-tab {
+  background-color: var(--main-color-dark);
+  border-radius: 10px;
+  transition: transform 0.3s;
+}

@@ -1,12 +1,17 @@
 import React from "react";
 
-const LinkItem = ({ icon, title }) => {
+const LinkItem = ({ icon, title, solidIcon, isActive, setActive }) => {
   return (
     <li>
-      <a href="/">
-        <div className="sidebar-link-icon">{icon}</div>
-        <span className="sidebar-link-text">{title}</span>
-      </a>
+      <div className={isActive ? "active-tab" : ""}>
+        <a href="#" className={isActive ? "active" : ""} onClick={setActive}>
+          <div className="sidebar-link-icon">
+            {icon}
+            {solidIcon}
+          </div>
+          <span className="sidebar-link-text hide-on-shrink">{title}</span>
+        </a>
+      </div>
     </li>
   );
 };
