@@ -1,10 +1,11 @@
 import { useState } from "react";
 import "./Sidebar.css";
 import SidebarTop from "./SidebarTop";
-import Search from "./Search";
+import Search from "./SidebarSearch";
 import Links from "./Links";
+import SidebarFooter from "./SidebarFooter";
 
-const Sidebar = ({ logo, title, menuItems, shortcutItems }) => {
+const Sidebar = ({ logo, title, menuItems, shortcutItems, loggedInUser }) => {
   const [isShrinked, setIsShrinked] = useState(false);
   const [activeItem, setActiveItem] = useState(menuItems[0]);
 
@@ -18,6 +19,7 @@ const Sidebar = ({ logo, title, menuItems, shortcutItems }) => {
       <Links menuItems={menuItems} {...commonLinkProps} />
       <h4 className="hide-on-shrink">Shortcuts</h4>
       <Links menuItems={shortcutItems} {...commonLinkProps} />
+      <SidebarFooter loggedInUser={loggedInUser} />
     </nav>
   );
 };

@@ -1,6 +1,7 @@
 import Content from "./Content";
 import Sidebar from "./sidebar/Sidebar";
 import Logo from "./assets/logo.png";
+import ProfileImage from "./assets/face-1.png";
 
 const menuItems = [
   { icon: <i class="bx bx-tachometer" />, solidIcon: <i class="bx bxs-tachometer" />, title: "Dashboard" },
@@ -19,10 +20,18 @@ const shortcutItems = [
   { icon: <i class="bx bx-cog" />, solidIcon: <i class="bx bxs-cog" />, title: "Settings" },
 ];
 
+const loggedInUser = { image: ProfileImage, name: "Ali AYDIN", role: "Admin" };
+
 function App() {
   return (
     <>
-      <Sidebar logo={Logo} title={"Aqumex"} menuItems={menuItems} shortcutItems={shortcutItems} />
+      <Sidebar
+        logo={Logo}
+        title={"Aqumex"}
+        menuItems={menuItems}
+        shortcutItems={shortcutItems}
+        loggedInUser={loggedInUser}
+      />
       <Content />
     </>
   );

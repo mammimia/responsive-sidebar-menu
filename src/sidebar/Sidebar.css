@@ -8,6 +8,8 @@ nav {
   padding: 1.8rem 0.85rem;
   color: var(--white);
   transition: width 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
 }
 
 nav::before {
@@ -187,4 +189,95 @@ nav.shrinked h4 {
   letter-spacing: 0.5px;
   margin: 1rem 0;
   transition: opacity 0.3s 0.2s, margin 0.5s 0s;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+}
+
+.sidebar-footer .account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: var(--text-color);
+  height: 3.5rem;
+  width: 3.7rem;
+  transition: opacity 0.3s 0s, color 0.3s 0s;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar-footer .account:hover {
+  color: #fff;
+}
+
+.sidebar-footer .user {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-footer .user-profile {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 100%;
+  transition: opacity 0.3s 0s, max-width 0.7s 0s ease-in-out;
+  overflow: hidden;
+}
+
+.sidebar-footer .user img {
+  width: 3rem;
+  border-radius: 50%;
+  margin: 0 0.4rem;
+}
+
+.sidebar-footer .user-info {
+  padding-left: 0.3rem;
+  white-space: nowrap;
+}
+
+.sidebar-footer .user-info h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.sidebar-footer .user-info h5 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: var(--text-color);
+  margin-top: 0.3rem;
+  line-height: 1;
+}
+
+.sidebar-footer .user .logout {
+  display: flex;
+  height: 2.5rem;
+  min-width: 2.4rem;
+  background-color: var(--main-color-dark);
+  text-decoration: none;
+  color: var(--text-color);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  border-radius: 0.7rem;
+  transition: color 0.3s;
+  margin: 0 0.65rem;
+}
+
+.sidebar-footer .user .logout:hover {
+  color: var(--white);
+}
+
+nav.shrinked .account {
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity 0.3s 0.3s, color 0.3s 0s;
+}
+
+nav.shrinked .user-profile {
+  max-width: 0;
+  transition: opacity 0.3s 0s, max-width 0.7s 0s ease-in-out;
 }
