@@ -1,4 +1,4 @@
-# Responsive Sidebar Menu Clone
+# Responsive Sidebar Menu
 
 This is a Responsive Sidebar Menu project. It was developed for learning purposes.
 
