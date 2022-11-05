@@ -13,10 +13,16 @@ const menuItems = [
   },
 ];
 
+const shortcutItems = [
+  { icon: <i class="bx bx-notepad" />, solidIcon: <i class="bx bxs-notepad" />, title: "Tasks" },
+  { icon: <i class="bx bx-help-circle" />, solidIcon: <i class="bx bxs-help-circle" />, title: "Help" },
+  { icon: <i class="bx bx-cog" />, solidIcon: <i class="bx bxs-cog" />, title: "Settings" },
+];
+
 function App() {
   return (
     <>
-      <Sidebar logo={Logo} title={"Aqumex"} menuItems={menuItems} />
+      <Sidebar logo={Logo} title={"Aqumex"} menuItems={menuItems} shortcutItems={shortcutItems} />
       <Content />
     </>
   );

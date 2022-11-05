@@ -1,9 +1,6 @@
-import { useState } from "react";
 import LinkItem from "./LinkItem";
 
-const Links = ({ menuItems }) => {
-  const [activeItem, setActiveItem] = useState(menuItems[0]);
-
+const Links = ({ menuItems, activeItem, setActiveItem }) => {
   return (
     <div className="sidebar-links">
       <ul>
