@@ -4,10 +4,10 @@ const SidebarFooter = ({ loggedInUser }) => {
   const { image, name, role } = loggedInUser;
   return (
     <div className="sidebar-footer">
-      <a href="#" className="account">
+      <a href="#" className="account" data-tip={name}>
         <i className="bx bx-user" />
       </a>
-      <div className="user">
+      <div className="user" data-tip={"Logout"}>
         <div className="user-profile hide-on-shrink">
           <img src={image} alt="" />
           <div className="user-info">

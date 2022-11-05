@@ -1,6 +1,6 @@
 import LinkItem from "./LinkItem";
 
-const Links = ({ menuItems, activeItem, setActiveItem }) => {
+const Links = ({ menuItems, activeItem, setActiveItem, isShrinked }) => {
   return (
     <div className="sidebar-links">
       <ul>
