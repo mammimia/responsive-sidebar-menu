@@ -9,7 +9,7 @@ const SidebarTop = ({ isShrinked, setIsShrinked, logo, title }) => {
           setIsShrinked(!isShrinked);
         }}
       >
-        <box-icon name="chevron-left"></box-icon>
+        <i class="bx bx-chevron-left" />
       </span>
 
       <img className="logo" src={logo} alt=""></img>

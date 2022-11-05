@@ -5,6 +5,7 @@
   --main-color-dark: #3651d4;
   --main-color-light: #5872f5;
   --text-color: #cfcde7;
+  --white: #ffffff;
 }
 
 *,
@@ -49,8 +50,4 @@ main .copyright span {
   color: var(--main-color);
   font-weight: 500;
   cursor: pointer;
-}
-
-box-icon {
-  fill: #fff;
 }

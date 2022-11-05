@@ -1,16 +1,19 @@
 import { useState } from "react";
 import "./Sidebar.css";
-import "boxicons";
 import SidebarTop from "./SidebarTop";
 import Search from "./Search";
+import Links from "./Links";
 
-const Sidebar = ({ logo, title }) => {
+const Sidebar = ({ logo, title, menuItems }) => {
   const [isShrinked, setIsShrinked] = useState(false);
+
+  const commonProps = { isShrinked: isShrinked, setIsShrinked: setIsShrinked };
 
   return (
     <nav className={isShrinked ? "shrinked" : ""}>
-      <SidebarTop isShrinked={isShrinked} setIsShrinked={setIsShrinked} logo={logo} title={title} />
-      <Search isShrinked={isShrinked} setIsShrinked={setIsShrinked} />
+      <SidebarTop logo={logo} title={title} {...commonProps} />
+      <Search {...commonProps} />
+      <Links menuItems={menuItems} />
     </nav>
   );
 };

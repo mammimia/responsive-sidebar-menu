@@ -10,7 +10,7 @@ const Search = ({ isShrinked, setIsShrinked }) => {
         }
       }}
     >
-      <box-icon name="search"></box-icon>
+      <i class="bx bx-search" />
       <input className="hide-on-shrink" type="text" placeholder="Quick Search..." />
     </div>
   );
